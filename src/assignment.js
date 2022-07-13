@@ -3,7 +3,6 @@
 const assignment = {};
 // ========================
 
-
 /**
  * Challenge - 1
  * 
@@ -13,19 +12,37 @@ const assignment = {};
  * @param {Array} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
-
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const array1 = [
+  68,
+  -68,
+  27,
+  94,
+  72,
+  -25,
+  -51,
+  32,
+  10,
+  64,
+  -94,
+  4,
+  34,
+  -86,
+  90,
+  81,
+  20,
+  -56,
+  -91,
+  -50
+];
 
 function sumOfNumbers(arrayOfNumbers) {
-
-    let sum = 0;
-    for (let i = 0; i < arrayOfNumbers.length; i++) {
-        sum = sum + arrayOfNumbers[i]
-    }
-    return sum
-
+  let sum = 0;
+  for (let i = 0; i < arrayOfNumbers.length; i++) {
+    sum = sum + arrayOfNumbers[i];
+  }
+  return sum;
 }
-console.log(sumOfNumbers(array))
+console.log(sumOfNumbers(array1));
 assignment.sumOfNumbers = sumOfNumbers;
 
 /**
@@ -37,16 +54,38 @@ assignment.sumOfNumbers = sumOfNumbers;
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
+const array2 = [
+  17,
+  0,
+  67,
+  41,
+  49,
+  21,
+  1,
+  86,
+  76,
+  2,
+  54,
+  14,
+  93,
+  84,
+  14,
+  77,
+  35,
+  7,
+  29,
+  64
+];
 function countEvenNumbers(arrayOfNumbers) {
-    let count = 0;
-    for (let i = 0; i < arrayOfNumbers.length; i++) {
-        if (arrayOfNumbers[i] % 2 === 0) {
-            count += 1;
-        }
+  let count = 0;
+  for (let i = 0; i < arrayOfNumbers.length; i++) {
+    if (arrayOfNumbers[i] % 2 === 0) {
+      count += 1;
     }
-    return count;
+  }
+  return count;
 }
-console.log(countEvenNumbers(array))
+console.log(countEvenNumbers(array2));
 assignment.countEvenNumbers = countEvenNumbers;
 
 /**
@@ -63,11 +102,34 @@ assignment.countEvenNumbers = countEvenNumbers;
  * @param {Array} arrayOfNumbers the array containing temperatures in Celsius to be converted
  * @returns Array the converted temperatures in Fahrenheit
  */
-function celsiusToFahrenheit(arrayOfNumbers) {
-    return arrayOfNumbers;
+const numbers = [
+  24,
+  30,
+  14,
+  -8,
+  22,
+  17,
+  -5,
+  25,
+  2,
+  25,
+  10,
+  10,
+  28,
+  33,
+  39,
+  28,
+  23,
+  -1,
+  2,
+  -4
+];
+function celsiusToFahrenheit() {
+  const newArray = numbers.map(num => Math.trunc(num * 9 / 5 + 32));
+  return newArray;
 }
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
-
+console.log(celsiusToFahrenheit());
+assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 // ========================
 // DO NOT EDIT THIS BLOCK
