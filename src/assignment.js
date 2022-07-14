@@ -104,7 +104,7 @@ assignment.countEvenNumbers = countEvenNumbers;
  */
 
 function celsiusToFahrenheit() {
-  const array3 = [
+  const arrayOfNumbers = [
     24,
     30,
     14,
@@ -127,7 +127,7 @@ function celsiusToFahrenheit() {
     -4
   ];
 
-  const newArray = array3.map(num => Math.trunc(num * 9 / 5 + 32));
+  const newArray = arrayOfNumbers.map(num => Math.trunc(num * 9 / 5 + 32));
   return newArray;
 }
 console.log(celsiusToFahrenheit());
