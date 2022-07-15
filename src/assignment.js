@@ -42,7 +42,7 @@ function sumOfNumbers(arrayOfNumbers) {
   }
   return sum;
 }
-console.log(sumOfNumbers(array1));
+
 assignment.sumOfNumbers = sumOfNumbers;
 
 /**
@@ -85,7 +85,7 @@ function countEvenNumbers(arrayOfNumbers) {
   }
   return count;
 }
-console.log(countEvenNumbers(array2));
+
 assignment.countEvenNumbers = countEvenNumbers;
 
 /**
@@ -133,7 +133,7 @@ function celsiusToFahrenheit(arrayOfNumbers) {
   });
   return converted;
 }
-console.log(celsiusToFahrenheit(array3));
+
 assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 // ========================
