@@ -102,35 +102,38 @@ assignment.countEvenNumbers = countEvenNumbers;
  * @param {Array} arrayOfNumbers the array containing temperatures in Celsius to be converted
  * @returns Array the converted temperatures in Fahrenheit
  */
+const array3 = [
+  24,
+  30,
+  14,
+  -8,
+  22,
+  17,
+  -5,
+  25,
+  2,
+  25,
+  10,
+  10,
+  28,
+  33,
+  39,
+  28,
+  23,
+  -1,
+  2,
+  -4
+];
+function celsiusToFahrenheit(arrayOfNumbers) {
+  let converted = [];
 
-function celsiusToFahrenheit() {
-  const arrayOfNumbers = [
-    24,
-    30,
-    14,
-    -8,
-    22,
-    17,
-    -5,
-    25,
-    2,
-    25,
-    10,
-    10,
-    28,
-    33,
-    39,
-    28,
-    23,
-    -1,
-    2,
-    -4
-  ];
-
-  const newArray = arrayOfNumbers.map(num => Math.trunc(num * 9 / 5 + 32));
-  return newArray;
+  arrayOfNumbers.forEach(number => {
+    let fahrenheit = Math.trunc(number * 9 / 5 + 32);
+    converted.push(fahrenheit);
+  });
+  return converted;
 }
-console.log(celsiusToFahrenheit());
+console.log(celsiusToFahrenheit(array3));
 assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 // ========================
